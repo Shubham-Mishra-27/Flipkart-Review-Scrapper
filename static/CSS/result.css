@@ -1,0 +1,66 @@
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #272727;
+    }
+    table{
+        position: absolute;
+        height:auto;
+        width: 70%;
+        left: 7%;
+        background-color: transparent;
+        border-collapse: separate;
+        border-spacing: 2rem 2rem;
+    }
+    table tr{
+        background-color: #b4b4b4;
+        
+
+    }
+    table tr th{
+        border: 2px solid black;
+        border-radius: 5rem;
+        color: #000000;
+        padding: 1.5rem 8rem;
+        background-color: #b4b4b4;
+        border:none;
+    }
+    table tr td{
+        border-radius: 2rem;
+        padding: 1rem;
+        text-align: center;
+        background-color: #b4b4b4;
+        overflow: hidden;
+        
+    }
+    table tr td p{
+        background-color: #b4b4b4;
+        font-size: 25px;
+        overflow: hidden;
+    }
+    .prevoius-btn{
+        background-color: #b4b4b4;
+        position: absolute;
+        bottom: 5%;
+        left: 2%;
+        padding: 2em;
+        border-radius: 1rem;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+    .next-btn{
+        background-color: #b4b4b4;
+        position: absolute;
+        bottom: 5%;
+        right: 2%;
+        padding: 2em 5em;
+        border-radius: 1rem;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+
+    .next-btn:hover,.prevoius-btn:hover{
+        background-color: rgb(153, 153, 153);
+    }

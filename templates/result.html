@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews</title>
+    <link rel="stylesheet" href="/static/CSS/result.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form class="wrapper">
+        <table>
+            <tr class="row1">
+                <th>Product</th>
+                <th>Name</th>
+                <th>Rating</th>
+                <th>Comment Heading</th>
+                <th>Comment</th>
+            </tr>
+                {% for review in reviews %}
+            <tr class="row2">
+                <td><p id="product">{{review['Product']}}</p></td>
+                <td><p id="name">{{review['Name']}}</p></td>
+                <td><p id="rating">{{review['Rating']}}</p></td>
+                <td><p id="heading">{{review['Heading']}}</p></td>
+                <td><p id="Comment">{{review['Comment']}}</p></td>
+            </tr>
+            {% endfor %}
+        </table>
+
+        <button class="prevoius-btn" type="submit" formaction="index.html">Previous page</button>
+        <button class="next-btn" onclick="next()">Next</button>
+
+
+    </form>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://kit.fontawesome.com/845d4afe8c.js" crossorigin="anonymous"></script>
+    <script src="/static/JS/result.js"></script>
+</body>
+</html>
